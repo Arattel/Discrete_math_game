@@ -1,0 +1,15 @@
+<html>
+    <head>
+        <title>Питання</title>
+    </head>
+    <body allign  = 'center'>
+      <h1>{{question}}</h1>
+      <form action="/login" method="POST">
+        <input type="text" name="answer" {{disabled}}/>
+        <input type="submit"  value="Відповісти" {{disabled}}/>
+      </form>
+      <form action="http://localhost:8000/results" method="POST">
+        <input type="submit" value="Завершити тест">
+      </form>
+    </body>
+</html>

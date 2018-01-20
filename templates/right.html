@@ -1,0 +1,16 @@
+<html>
+    <head>
+        <title>Результат(питання)</title>
+    </head>
+    <body>
+      <h1>{{question}}</h1>
+      <p><font color = {{color}}>{{response}}</font></p>
+      <h3>{{good}}</h3>
+      <form action="http://localhost:8000">
+        <input type="submit" value="Наступне питання">
+      </form>
+      <form action="http://localhost:8000/results" method="POST">
+        <input type="submit" value="Завершити тест">
+      </form>
+    </body>
+</html>
